@@ -1,7 +1,10 @@
+import com.sun.glass.ui.Size;
+
 /**
  * Created by luciano on 08/nov/2017.
  */
 public class pilas {
+    public int size = 0;
     private  nodo top;
 
     public pilas(){
@@ -22,6 +25,7 @@ public class pilas {
             nuevoNodo.setProx(top);
             top = nuevoNodo;
         }
+        size ++;
     }
 
     //Método para mostrar datos de la pila
@@ -54,5 +58,11 @@ public class pilas {
         }
         else
             System.out.println("La pila esta vacía");
+        size --;
     }
+
+    public void getSize(){
+         System.out.println("El tamaño: " + size);
+    }
+
 }

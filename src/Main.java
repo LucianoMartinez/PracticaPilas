@@ -12,10 +12,12 @@ public class Main {
 
         p.peek();
         p.cima();
+        p.getSize();
         p.pop();
         p.peek();
         p.pop();
         p.cima();
+        p.getSize();
         p.pop();
         p.peek();
     }
